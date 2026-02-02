@@ -1,59 +1,125 @@
-# BancaVirtualFrontend
+ 🏦 Banca Virtual – Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.2.
+Proyecto académico desarrollado con **Angular (standalone)** que implementa un **login funcional** con una interfaz profesional tipo banca virtual.
 
-## Development server
+El objetivo del proyecto es aplicar buenas prácticas de desarrollo frontend moderno, control de versiones con GitHub y correcta documentación para que el proyecto pueda ejecutarse en cualquier computador.
 
-To start a local development server, run:
+---
 
+📌 Tecnologías utilizadas
+
+- Angular (Standalone Components)
+- TypeScript
+- HTML5
+- CSS3
+- Node.js
+- Angular CLI
+- Git y GitHub
+
+---
+
+ 🧩 Requisitos previos
+
+Para ejecutar este proyecto en cualquier computador, se debe contar con los siguientes requisitos:
+
+ 1️⃣ Node.js (OBLIGATORIO)
+
+- Versión recomendada: **Node.js 18 o superior**
+- Descargar desde:  
+  👉 https://nodejs.org
+
+Verificar instalación:
 ```bash
+node -v
+npm -v
+
+2️⃣ Angular CLI (OBLIGATORIO)
+
+Instalar Angular CLI de forma global:
+
+npm install -g @angular/cli
+
+
+Verificar instalación:
+
+ng version
+
+3️⃣ Git (RECOMENDADO)
+
+Para clonar el repositorio:
+
+Descargar desde:
+👉 https://git-scm.com
+
+4️⃣ Editor de código (RECOMENDADO)
+
+Visual Studio Code
+👉 https://code.visualstudio.com
+
+📥 Clonar el repositorio
+
+Desde una terminal (Git Bash o terminal integrada de VS Code):
+
+git clone https://github.com/DdanielV5001/Banca-Virtual.git
+
+
+Ingresar a la carpeta del proyecto frontend:
+
+cd Banca-Virtual/banca-virtual-frontend
+
+📦 Instalación de dependencias
+
+Una vez dentro del proyecto, ejecutar:
+
+npm install
+
+
+Este comando descargará todas las dependencias necesarias para ejecutar la aplicación.
+
+▶️ Ejecutar el proyecto
+
+Para iniciar el servidor de desarrollo de Angular:
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+Si todo está correcto, la terminal mostrará algo similar a:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Local: http://localhost:4200/
 
-```bash
-ng generate component component-name
-```
+🌐 Acceder a la aplicación
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Abrir un navegador web y dirigirse a:
 
-```bash
-ng generate --help
-```
+http://localhost:4200
 
-## Building
+🔐 Credenciales de prueba
 
-To build the project run:
+El login utiliza validación simulada (fake login) con fines académicos:
 
-```bash
-ng build
-```
+Usuario: demo
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Contraseña: 1234
 
-## Running unit tests
+⚠️ Problemas comunes y soluciones
+❌ Error: ng: command not found
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Angular CLI no está instalado.
 
-```bash
-ng test
-```
+Solución:
 
-## Running end-to-end tests
+npm install -g @angular/cli
 
-For end-to-end (e2e) testing, run:
+❌ Error de permisos en PowerShell (Windows)
 
-```bash
-ng e2e
-```
+Se recomienda usar:
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Git Bash
 
-## Additional Resources
+Terminal integrada de Visual Studio Code
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+❌ Error de dependencias faltantes
+
+Ejecutar nuevamente:
+
+npm install
